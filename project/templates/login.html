@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link href="./../static/style.css" rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color:#a9e7f6;">
+
+    <center><img src="static\instagram-4703914-3915166.webp"alt='avatar'></center>
+    <center><img src="static\Screenshot 2023-03-18 143231.png"alt='avatar'></center>
+
+<center><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></center>
+<form method="post">
+  <center>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="static\bangkok-thailand-may-14-2016-260nw-435629701.webp" alt="Avatar" class="avatar">
+    </div>
+    
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="u" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="p" required>
+        
+      <button type="submit">Login</button>
+    </form>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+</center>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+</body>
+</html>

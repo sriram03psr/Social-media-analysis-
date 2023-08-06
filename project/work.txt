@@ -1,0 +1,28 @@
+@app.route('/')
+def your_view():
+    your_list= [1,2,3,4]
+    return render_template('your_view.html', your_list=your_list)
+
+{% for your_list_element in your_list %}
+      <p>{{ your_list_element }} </p>
+  {% endfor %}
+WordCloudPlotter('Caption')
+PlotData(['Followers', 'Time since posted'])
+plt.plot(np.arange(0,0.4, 0.01), np.arange(0, 0.4, 0.01), color = 'green')
+PredictionsWithConstantFollowers(gbr, 100, stdSc, maxValLikes)
+
+
+
+<!DOCTYPE html>
+<head>
+  <link href="static\sty.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div class="background">
+    <center><table border = "1">
+    <center><h1>TOP TRENDING HASHTAGS</h1></center>
+   <center>{% for your_list_element in d %}
+      <p>{{ your_list_element }} </p>
+  {% endfor %}
+</table></center></div></body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#News {background-color: rgb(255, 62, 23);}
+#About {background-color: rgb(249, 184, 63);}
+</style>
+</head>
+<body>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <h1><p>instgram will now put ads in user search results to reach people
+
+    meta rolling out its paid information in US for instagram,facebook users
+
+    Instagram's new feature to let users access recently shared reels
+    
+    instagram down for users for a few hours worldwide,cause unclear
+
+    Introducing Instagram Broadcast Channels
+
+    Giving People Control Over Their Time and What They See on Instagram
+
+    Continuing to Keep Instagram Safe and Secure
+
+    Introducing new ways to connect on Instagram
+  </p> </h1>
+</div>
+
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <h1>Instagram[a] is a photo and video sharing social networking service owned by American company Meta Platforms. The app allows users to upload media that can be edited with filters and organized by hashtags and geographical tagging. Posts can be shared publicly or with preapproved followers. Users can browse other users' content by tag and location, view trending content, like photos, and follow other users to add their content to a personal feed.[7]
+
+    Instagram was originally distinguished by allowing content to be framed only in a square (1:1) aspect ratio of 640 pixels to match the display width of the iPhone at the time. In 2015, this restriction was eased with an increase to 1080 pixels. It also added messaging features, the ability to include multiple images or videos in a single post, and a Stories feature—similar to its main competitor Snapchat—which allowed users to post their content to a sequential feed, with each post accessible to others for 24 hours. As of January 2019, Stories is used by 500 million people daily.[7]
+    
+    Originally launched for iOS in October 2010 by Kevin Systrom and Mike Krieger, Instagram rapidly gained popularity, with one million registered users in two months, 10 million in a year, and 1 billion by June 2018.</h1></div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
